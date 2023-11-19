@@ -1,0 +1,50 @@
+.nav.nav-pills.nav-fill{
+    background: #4b6cb7;  /* fallback for old browsers */
+    background: #114357;  /* fallback for old browsers */
+    background: #4DA0B0;  /* fallback for old browsers */
+    background: #2980B9;  /* fallback for old browsers */
+    background: #333333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+.nav-item-logo .nav-link{
+    color:#eccd00;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.nav-item .nav-link.active{
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size:40px;
+    color:#ffdd00;
+    text-shadow: -3px -3px 0 #3B4CCA,  
+    3px -3px 0 #3B4CCA,
+   -3px  3px 0 #3B4CCA,
+    3px  -3px 0 #3B4CCA;
+    letter-spacing: 3px;
+    background: #333333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.nav-link{
+    font-family: 'Tilt Neon', sans-serif;
+    font-size:30px;
+    display: inline-block;
+    color:white;
+
+}
+.nav-link:hover{
+    color: #ffffff;
+    font-family: 'Tilt Neon', sans-serif;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+
+

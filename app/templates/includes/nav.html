@@ -1,0 +1,22 @@
+{% block styles %}
+    <link rel="stylesheet" href="../static/styles/nav.css">
+{% endblock %}
+<ul class="nav nav-pills nav-fill">
+  {% if current_user.is_authenticated %}
+    <li class="nav-item">
+      {{current_user.first_name}}
+      <a class="nav-link active" aria-current="page" href="{{ url_for('logout')  }}">Sign Off</a>\
+    </li>
+    <li>
+      <a class="nav-link active" aria-current="page" href="{{ url_for('home')  }}">POKÉPEDIA</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('search')  }}">Search Any Pokémon</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('login')  }}">Login</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('signup')  }}">Sign Up</a>
+      </li>
+  </ul>

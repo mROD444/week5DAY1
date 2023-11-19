@@ -1,0 +1,40 @@
+{% extends 'base.html'%}
+
+{% block title %}
+  Join Poképedia!
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="../static/styles/signup.css">
+{% endblock %}
+
+{% block content %}
+{% include './includes/nav.html'%}
+    <form method="POST">
+      <h1 class="text-center mt-5">Become a Poképedia Trainer</h1>
+    {{form.hidden_tag()}}
+      <div class="mb-3">
+        <label for="fname" class="form-label">First Name</label>
+        {{form.first_name(class='form-control cus-input', id='fname')}}
+      </div>
+        <div class="mb-3">
+        <label for="lname" class="form-label">Last Name</label>
+        {{form.last_name(class='form-control cus-input', id='lname')}}
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          {{form.email(class='form-control', id='email')}}
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          {{form.password (class='form-control cus-input', id="password")}}
+        </div>
+        <div class="mb-3">
+            <label for="cpassword" class="form-label">Confirm Password</label>
+            {{form.confirmpassword (class='form-control', id="cpassword")}}
+          </div>
+        <div id="emailHelp" class="form-text">We promise not a single Team Rocket member will EVER get their hands on your precious information!🔒</div>
+        <button type="submit" class="btn btn-primary">Become a Trainer</button>
+      </form>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+{%endblock%}
